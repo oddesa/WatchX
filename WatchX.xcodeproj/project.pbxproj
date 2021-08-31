@@ -13,6 +13,14 @@
 		98E16D8C26DE728B0030C11A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E16D8B26DE728B0030C11A /* Preview Assets.xcassets */; };
 		98E16D9726DE728B0030C11A /* WatchXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E16D9626DE728B0030C11A /* WatchXTests.swift */; };
 		98E16DA226DE728B0030C11A /* WatchXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E16DA126DE728B0030C11A /* WatchXUITests.swift */; };
+		98E16DB126DE75900030C11A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E16DB026DE75900030C11A /* Movie.swift */; };
+		98E16DB426DE767F0030C11A /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E16DB326DE767F0030C11A /* MovieService.swift */; };
+		98E16DB626DE79AB0030C11A /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E16DB526DE79AB0030C11A /* MovieStore.swift */; };
+		98E16DB826DE7AC90030C11A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E16DB726DE7AC90030C11A /* Utils.swift */; };
+		98E16DBA26DE90D30030C11A /* Movie+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E16DB926DE90D30030C11A /* Movie+Stub.swift */; };
+		98E16DBF26DE92690030C11A /* search_movie.json in Resources */ = {isa = PBXBuildFile; fileRef = 98E16DBC26DE92690030C11A /* search_movie.json */; };
+		98E16DC026DE92690030C11A /* movie_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 98E16DBD26DE92690030C11A /* movie_list.json */; };
+		98E16DC126DE92690030C11A /* movie_info.json in Resources */ = {isa = PBXBuildFile; fileRef = 98E16DBE26DE92690030C11A /* movie_info.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,14 @@
 		98E16D9D26DE728B0030C11A /* WatchXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E16DA126DE728B0030C11A /* WatchXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchXUITests.swift; sourceTree = "<group>"; };
 		98E16DA326DE728B0030C11A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98E16DB026DE75900030C11A /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		98E16DB326DE767F0030C11A /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		98E16DB526DE79AB0030C11A /* MovieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStore.swift; sourceTree = "<group>"; };
+		98E16DB726DE7AC90030C11A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		98E16DB926DE90D30030C11A /* Movie+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Stub.swift"; sourceTree = "<group>"; };
+		98E16DBC26DE92690030C11A /* search_movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search_movie.json; sourceTree = "<group>"; };
+		98E16DBD26DE92690030C11A /* movie_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_list.json; sourceTree = "<group>"; };
+		98E16DBE26DE92690030C11A /* movie_info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_info.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				98E16D8426DE728A0030C11A /* WatchXApp.swift */,
+				98E16DB226DE76530030C11A /* Services */,
+				98E16DAF26DE75480030C11A /* Models */,
 				98E16D8626DE728A0030C11A /* ContentView.swift */,
+				98E16DBB26DE91010030C11A /* Resources */,
 				98E16D8826DE728B0030C11A /* Assets.xcassets */,
 				98E16D8D26DE728B0030C11A /* Info.plist */,
 				98E16D8A26DE728B0030C11A /* Preview Content */,
@@ -128,6 +147,35 @@
 				98E16DA326DE728B0030C11A /* Info.plist */,
 			);
 			path = WatchXUITests;
+			sourceTree = "<group>";
+		};
+		98E16DAF26DE75480030C11A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				98E16DB026DE75900030C11A /* Movie.swift */,
+				98E16DB926DE90D30030C11A /* Movie+Stub.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		98E16DB226DE76530030C11A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				98E16DB326DE767F0030C11A /* MovieService.swift */,
+				98E16DB726DE7AC90030C11A /* Utils.swift */,
+				98E16DB526DE79AB0030C11A /* MovieStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		98E16DBB26DE91010030C11A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				98E16DBE26DE92690030C11A /* movie_info.json */,
+				98E16DBD26DE92690030C11A /* movie_list.json */,
+				98E16DBC26DE92690030C11A /* search_movie.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +281,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98E16DBF26DE92690030C11A /* search_movie.json in Resources */,
+				98E16DC126DE92690030C11A /* movie_info.json in Resources */,
 				98E16D8C26DE728B0030C11A /* Preview Assets.xcassets in Resources */,
+				98E16DC026DE92690030C11A /* movie_list.json in Resources */,
 				98E16D8926DE728B0030C11A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +312,11 @@
 			files = (
 				98E16D8726DE728A0030C11A /* ContentView.swift in Sources */,
 				98E16D8526DE728A0030C11A /* WatchXApp.swift in Sources */,
+				98E16DB426DE767F0030C11A /* MovieService.swift in Sources */,
+				98E16DBA26DE90D30030C11A /* Movie+Stub.swift in Sources */,
+				98E16DB126DE75900030C11A /* Movie.swift in Sources */,
+				98E16DB626DE79AB0030C11A /* MovieStore.swift in Sources */,
+				98E16DB826DE7AC90030C11A /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
