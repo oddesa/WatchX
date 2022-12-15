@@ -11,7 +11,7 @@ import SwiftUI
 struct WatchXApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView() 
         }
     }
 }
